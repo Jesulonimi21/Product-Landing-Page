@@ -1,0 +1,256 @@
+<!Doctype html>
+<html>
+    <head>
+        <style>
+            header{
+                top:10px;
+                right: 0px;
+                width:100%;
+                
+                background-color: #eee;
+                max-height: 50px ;
+                /* border: solid 2px green; */
+                display: flex;
+            
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom:40px;
+                align-items: center;
+                position: fixed;
+            }
+            body{
+                background-color: #eee;
+            }
+            header img{
+                width:30%;             
+            }
+            nav{
+                margin-top: 0px;
+                width:40%
+            }
+            nav ul{
+                margin-top: 0px;
+                width: 100%;
+                /* border: solid 2px; */
+            }
+            nav ul{
+                margin-top: 10px;
+                display: grid;
+                font-size: 12px;
+                list-style: none;
+                
+                grid-column-gap: 2%;
+                grid-template-columns: 30% 30% 30%;
+            }
+            #email{
+                border-radius: 5px;
+                display: block;
+                height: 30px;
+                border:#ccc solid 1px;
+                margin:40px auto 0px;
+                padding-left: 5px;
+            }
+
+            button{
+                display: block;
+                width:180px;
+                margin: 15px auto;
+                height: 35px;
+                border-radius: 5px;
+                border: 0px;
+                background-color:rgb(219, 186, 22);
+            }
+            #description{
+                margin:0 auto;
+                margin-top: 70px;
+                text-align: center;
+            }
+            .material-desc{
+                width:80%;
+                margin: 0 auto;
+            }
+            .material-desc h4{
+                margin-bottom:0px;
+                font-size:20px;
+            }
+            .material-desc p{
+                margin-top: 6px;
+                text-align: center;
+            }
+            .inv-item-desc-container{
+                width:80%;
+                margin:0 auto;
+                display: grid;
+                grid-template-rows: 60%;
+                /* border:solid 2px black; */
+            
+            }
+            .inv-item{
+                width:80%;
+                margin:0 auto 20px;
+                border:solid 2px black;
+                text-align:center;
+                height:300px;   
+                max-width: 250px;
+                
+            }
+           
+            .inv-item h4{
+                background-color: #ccc;
+                padding: 7px;
+                margin-top: 4px;
+
+            }
+            .inv-item button{
+                width:60%;
+            }
+            @media (min-width:700px){
+                .inv-item-desc-container{
+                    grid-template-columns:30% 30% 30%;
+                    grid-column-gap: 0px;
+                    padding-left: 5%;
+                }
+                .inv-item{
+                    
+                    max-width: 300px;
+                  }
+              
+            }
+
+            @media (max-width:450px){
+                header{
+                    flex-direction: column;
+                    max-height: 120px;
+                }
+                header img{
+                    width:80%;
+                }
+                #description{
+                    margin-top:150px
+                }
+
+                header ul{
+                    grid-template-columns: 100%;
+                    grid-row-gap: 10px;
+                   
+                }
+                .material-desc h4{
+
+                    text-align: center;
+                }
+            }
+
+
+        #video{
+            display:block;
+            width:50%;
+            margin:20px auto 20px;
+        }
+
+        footer{
+            background-color: #ccc;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+        }
+
+       
+        footer  ul{
+            width: 170px;
+            display: flex;
+            flex-direction:flex-end;
+            list-style: none;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            font-size: 14px;
+            margin-right: 10%;
+        }
+
+        footer p{
+            margin-top:0;
+            font-size: 12px;
+            margin-right: 10%;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        </style>
+    </head>
+
+    <body>
+        <header id="header">
+            <img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" >
+            <nav id="nav-bar">
+                <ul>
+                    <li class="nav-link"><a href="">Features</a></li>
+                    <li class="nav-link"><a href="">How It Works</a></li>
+                    <li class="nav-link"><a href="">Pricing</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h4 id="description"><strong>Handcrafted,home-made masterpieces</strong></h4>
+        <form action=" https://www.freecodecamp.com/email-submit">
+            <input required placeholder="Enter your email address " id="email" type="email">
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="material-desc">
+            <h4>Premium Materials</h4>
+            <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.  </p>
+        </div>
+        <div class="material-desc">
+                <h4>Premium Materials</h4>
+                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.  </p>
+            </div>
+        <div class="material-desc">
+                <h4>Premium Materials</h4>
+                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.  </p>
+            </div>
+        <div class="material-desc">
+                <h4>Premium Materials</h4>
+                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.  </p>
+            </div>
+            <iframe id="video" width="550" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       
+        
+        <div class= inv-item-desc-container>
+            <div class=inv-item>
+                    <h4>TENOR TROMBONE</h4>
+                    <h3>$600</h3>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum dolor</p>
+                    <p>Lorem ipsum</p>
+                    <button>SELECT</button>
+            </div>
+
+        <div class=inv-item>
+                <h4>TENOR TROMBONE</h4>
+                <h3>$600</h3>
+                <p>Lorem ipsum.</p>
+                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum</p>
+                <button>SELECT</button>
+        </div>
+        <div class=inv-item>
+                <h4>TENOR TROMBONE</h4>
+                <h3>$600</h3>
+                <p>Lorem ipsum.</p>
+                <p>Lorem ipsum dolor</p>
+                <p>Lorem ipsum</p>
+                <button>SELECT</button>
+        </div>
+        </div>
+
+        <footer>
+            <ul>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Contact</li>
+            </ul>
+
+            <p>Copyright 2016, Original Trombones</p>
+        </footer>
+
+    </body>
+</html>
